@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title>HTML FORM Assessment</title>
+
+        <style>
+            body{
+                border-style:groove;
+            }
+
+            h3{
+
+                border-style: double;
+                border-width: thick;
+            }
+        </style>
+    </head>
+
+    <body>
+        <center>
+            <h1>HTML FORM Assessment - Day 5</h1>
+        
+        
+        <h3>CONTACT FORM</h3> <br>
+
+        <div class="container" >
+        <form action="/data.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+        <br><br>
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your lastname.." required>
+        <br><br>
+
+        <label for="birthday">Select your <u>Date of Birth:</u> </label>
+        <input type="date" id="birthday" name="birthday" required>
+        <br><br>
+
+        <label for="phonenumber">Enter your <u>Phone Number:</u> </label>
+        <input type="tel" id="phonenumber" name="phonenumber" required>
+        <br><br>
+
+        <label for="country">Country</label>
+        <select id="country" name="country" required>
+        <option value="india">India</option> 
+        <option value="canada">Canada</option>
+        <option value="australia">Australia</option>
+        <option value="germany">Germany</option>
+        <option value="quatar">Quatar</option>
+        <option value="usa">USA</option>
+        </select><br><br>
+
+        <label for="address"><u>Address:</u></label>
+        <textarea id="address" name="address" placeholder="Type your address .." style="height:200px"></textarea>
+        <br><br>
+
+        <input type="radio" name="gender" value="male" required>Male   &nbsp;
+        <input type="radio" name="gender" value="female" required>Female   &nbsp;
+        <input type="radio" name="gender" value="othet" required>Other   &nbsp;
+        <br><br>
+
+        <fieldset>
+            <legend>Choose your expirence using HTML:</legend>
+        
+            <input type="checkbox" name="satisfaction" value="good">Above 10yrs    &nbsp;
+            <input type="checkbox" name="satisfaction" value="average">1-10 yrs     &nbsp;
+            <input type="checkbox" name="satisfaction" value="bad">less than a year     &nbsp;
+        </fieldset>
+        <br><br>
+
+        <label for="comment">Comments</label>
+        <textarea id="comment" name="comment" placeholder="Please type your Comments.." style="height:200px"></textarea>
+        <br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    </div>
+    </center>
+    </body>
+
+
+</html>
